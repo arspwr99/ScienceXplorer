@@ -1,5 +1,10 @@
 # Welcome to ScienceXplorer Python Library
 
+## Download Code
+```bash
+git clone https://github.com/arspwr99/ScienceXplorer.git
+```
+
 ## Overview
 
 ScienceXplorer is a powerful Python library designed to assist you in navigating the vast world of scientific knowledge. With its versatile features, ScienceXplorer allows you to explore academic papers, authors, and more. Below are some of the key functionalities that ScienceXplorer offers:
@@ -11,7 +16,7 @@ ScienceXplorer is a powerful Python library designed to assist you in navigating
 Use this command to analyze a specific paper by providing its unique ID. This script retrieves essential information about the paper, such as its title, authors, citations, and more.
 
 ```bash
-!python analyze_paper.py --paper_id="CorpusID:235266322"
+python3 analyze_paper.py --paper_id="CorpusID:235266322"
 ```
 The output of this script will be similar to the following:
 
@@ -46,7 +51,7 @@ The paper has 66 references of which 6 contain self-referencing authors.
 Discover papers related to your area of interest by entering a query. You can also save the results in a JSON file for future reference.
 
 ```bash
-python analyze_paper_query.py --query="Search Engine for scientific articles" --filepath="dataset.json"
+python3 analyze_paper_query.py --query="Search Engine for scientific articles" --filepath="dataset.json"
 ```
 The output of this script will be similar to the following and also will save a json file dataset.json in the current directory:
 
@@ -81,7 +86,7 @@ The paper has 0 references of which 0 contain self-referencing authors.
 Explore the works of a specific author by providing their unique ID. This script retrieves all the papers authored by the selected individual, along with detailed citation information for each paper. It also calculates self and external citations for the entire body of work by the scientist.
 
 ```bash
-python analyze_author.py --author "29961755"
+python3 analyze_author.py --author "29961755"
 ```
 The output of this script will be similar to the following:
 
@@ -131,7 +136,7 @@ Conclusion:
 If you prefer to search for an author using a more flexible, fuzzy approach, this script is your go-to tool. It searches for authors based on the provided name, and if multiple matches are found, it selects the first one. For a specific author, find their ID using the Semantic Scholar platform and then use the analyze_author_id script for a more detailed analysis, including self and external citations.
 
 ```bash
-python analyze_author.py --author "Aristomenis"
+python3 analyze_author.py --author "Aristomenis"
 ```
 The output of this script will be similar to the following:
 ```bash
